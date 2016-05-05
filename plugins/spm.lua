@@ -1,5 +1,5 @@
 Local finction(msg, matches)
-If matches[1] = 'spam' and matches[2] = 'fuck' then
+If matches[1] = 'spm' and matches[2] = 'fuck' then
 Return [[ 
 عشقم سارا دوست دارم همیشه در قلب منی 
 ]],
@@ -10,7 +10,7 @@ Return {
 Useage = "to spam somewhere",
 Description = " a simple plugin to leafn lua",
 Patterns = {
-"^[!/](spam) (.*)$"
+"^[!/](spm) (.*)$"
 },
 run = run
 moderated = true
