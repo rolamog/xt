@@ -864,7 +864,7 @@ end
 
 return {
     patterns = {
-        '^تنظیمات$',
+        '^[!/#](settings)$',
         '^[!/#](settings) (.*) (.*)$',
         '^[!/#](rem)$',
         '^[!/#](setname) (.*)$',
@@ -873,7 +873,7 @@ return {
         '^[!/#](muteall)$',
         '^[!/#](muteall) (.*)$',
         '^[!/#](unmuteall)$',
-        '^لینک$',
+        '^[!/#](link)$',
         '^[!/#](newlink)$',
         '^[!/#](tosupergroup)$',
         '^[!/#](setdescription) (.*)$',
