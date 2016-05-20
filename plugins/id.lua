@@ -152,7 +152,7 @@ end
 return {
   patterns = {
     "^(whois)$",
-    "^(id)$",
+    "^ایدی$",
     "^ids? (chat)$",
     "^ids? (channel)$",
     "^(whois) (.*)$"
