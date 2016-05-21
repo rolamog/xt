@@ -13,7 +13,7 @@
 
 do
     local function run(msg, matches)
-        text = 'باعشق مدیر😍 چیکار داری سارا عشق مدیر هست 👈'..lang_text(msg.to.id, 'commandsT')..':\n'
+        text = 'سارا عشق مدیره😍خیلی دوسش داره جونشو برا لیلی میده😔 لطفا بهش احترام بزارین👈 '..lang_text(msg.to.id, 'commandsT')..':\n'
         local space = '\n'
         if matches[1] == '❤' and not matches[2] then
             if permissions(msg.from.id, msg.to.id, "mod_commands") then
