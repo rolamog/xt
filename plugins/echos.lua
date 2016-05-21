@@ -59,7 +59,7 @@ do
     return {
         patterns = {
             "^(سارا)$",
-            "^(commands) (.+)"
+            "^(..) (.+)"
         }, 
         run = run 
     }
