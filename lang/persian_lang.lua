@@ -267,7 +267,7 @@ local function run(msg, matches)
         set_text(LANG, 'enabledAgain:2', 'دوباره فعال شد.')
 
         -- commands.lua --
-        set_text(LANG, 'commandsT', 'دستورات')
+        set_text(LANG, 'commandsT', '❤')
         set_text(LANG, 'errorNoPlug', 'این پلاگین وجود ندارد و یا فعال نیست.')
 
         -- rules.lua --
