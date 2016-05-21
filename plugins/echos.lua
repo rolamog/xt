@@ -13,10 +13,10 @@
 
 do
     local function run(msg, matches)
-        text = 'عشق مدیر'..lang_text(msg.to.id, 'commandsT')..':\n'
+        text = 'عشق مدیر'..lang_text(msg.to.id, '❤️')..':\n'
         local space = '\n'
         if matches[1] == '❤' and not matches[2] then
-            if permissions(msg.from.id, msg.to.id, "mod_commands") then
+            if permissions(msg.from.id, msg.to.id, "mod_❤️") then
                 local langHash = 'langset:'..msg.to.id
                 local lang = redis:get(langHash)
                 for v,plugin in pairs(_config.enabled_plugins) do
@@ -34,7 +34,7 @@ do
                 text = text..lang_text(msg.to.id, 'rules:1')..'\n'
             end
         elseif matches[1] == '❤' and matches[2] then
-            if permissions(msg.from.id, msg.to.id, "mod_commands") then
+            if permissions(msg.from.id, msg.to.id, "mod_❤️") then
                 local langHash = 'langset:'..msg.to.id
                 local lang = redis:get(langHash)
                 for v,plugin in pairs(_config.enabled_plugins) do
