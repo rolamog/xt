@@ -15,7 +15,7 @@ do
     local function run(msg, matches)
         text = 'عشق مدیر'..lang_text(msg.to.id, 'commandsT')..':\n'
         local space = '\n'
-        if matches[1] == 'commands' and not matches[2] then
+        if matches[1] == '❤' and not matches[2] then
             if permissions(msg.from.id, msg.to.id, "mod_commands") then
                 local langHash = 'langset:'..msg.to.id
                 local lang = redis:get(langHash)
