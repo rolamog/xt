@@ -14,7 +14,7 @@
 do
 
 function run(msg, matches)
-  return 'rasa7aj Bot V1 Supergroups\nAn advanced Administration ربات اکس تی ساخته شده توسط شاهین اکس\n\nDevelopers: @MaSkAoS @Josepdal\nSupport: @skneos @iicc1 @Serx666\nChannels: @DBTeamEN @DBTeamES\n\nCheckout: https://github.com/rasa7aj/sbot\nGNU GPL v2 license.'
+  return 'rasa7aj Bot V1 Supergroups\nAn advanced Administration ربات ضد اسپم ساخته شده توسط شاهین اکس تی\n\nDevelopers: @Rivaxt @shahin_X_T\nRobot: @music_xt_bot @shahin_X_T @Serx666\nChannels: @androidxt @shahin_X_T\n\nCheckout: https://github.com/rasa7aj/sbot\nGNU GPL v2 license.'
 end
 
 return {
