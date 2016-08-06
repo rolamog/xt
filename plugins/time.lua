@@ -94,9 +94,9 @@ end
 
 return {
   description = "Displays the local time in an area", 
-  usage = "زمان [area]: Displays the local time in that area",
+  usage = "!time [area]: Displays the local time in that area",
   usage = "!zaman [area]: Displays the local time in that area",
-  patterns = {"^زمان (.*)$"},
+  patterns = {"^time (.*)$"},
   patterns = {"^!zaman (.*)$"},
   run = run
 }
