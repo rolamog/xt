@@ -150,9 +150,13 @@ local function run(msg, matches)
 end
 
 return {
-  patterns = {
+ 
+  description = "Simplest plugin ever!",
+  usage = "!id [whatever]: echoes the msg",    
+    
+    patterns = {
     "^[!/#](whois)$",
-    "^[!/#](id)$",
+    "^ایدی $",
     "^[!/#]ids? (chat)$",
     "^[!/#]ids? (channel)$",
     "^[!/#](whois) (.*)$"
