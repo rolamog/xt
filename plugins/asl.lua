@@ -1,15 +1,3 @@
---[[ 
-#Open_plugin_ASL 
-پلاگین اصل 
-💾ذخیره اطلاعات شما از قبیل⁉️ 
-
-📋اسم•سن•ادرس•سایت•کانال•اینساگرام•جنسیت•تحصیلات•شماره 
-▂▂▂▂▂▂▂▂▂▂▂▂ 
-#by: VAHID 
-Channel∶ @ATTOM_CH 
-Channel: @SUDO_TM 
-]] 
-
 do 
 local function run(msg, matches) 
 
@@ -117,17 +105,17 @@ end
 end 
 
 if matches[1]:lower() == 'myinfo' then 
-return "<b>Hi "..msg.from.first_name.."</b>\n" 
-.."\n".."<b>Your Name</b>∶"..(redis:get(hash3) or '<b>NO NAME</b>').."\n" 
-.."<b>Your Age</b>∶"..(redis:get(hash2)  or '<b>NO AGE</b>').."\n" 
-.."<b>Your Sex</b>∶"..(redis:get(hash4)  or '<b>NO SEX</b>').."\n" 
-.."<b>Your Address</b>∶"..(redis:get(hash9)  or '<b>NO Address</b>').."\n" 
-.."<b>Your Education</b>∶"..(redis:get(hash5)  or '<b>NO Education</b>').."\n" 
-.."<b>Your Number</b>∶"..(redis:get(hash6)  or '<b>NO Number</b>').."\n" 
-.."<b>Your Channel</b>∶"..(redis:get(hash7)  or '<b>NO Channel</b>').."\n" 
-.."<b>Your insta</b>∶"..(redis:get(hash8)  or '<b>NO insta</b>').."\n" 
-.."<b>Your Site</b>∶"..(redis:get(hash10)  or '<b>NO Site</b>').."\n\n" 
-.."<b>CHANNEL</b> @ATTOM_CH".."\n" 
+return "Hi "..msg.from.first_name.."\n" 
+.."\n".."<b>Your Name∶"..(redis:get(hash3) or 'NO NAME').."\n" 
+.."Your Age∶"..(redis:get(hash2)  or 'NO AGE').."\n" 
+.."Your Sex∶"..(redis:get(hash4)  or 'NO SEX').."\n" 
+.."Your Address∶"..(redis:get(hash9)  or 'NO Address').."\n" 
+.."Your Education∶"..(redis:get(hash5)  or 'NO Education').."\n" 
+.."Your Number∶"..(redis:get(hash6)  or 'NO Number').."\n" 
+.."Your Channel∶"..(redis:get(hash7)  or 'NO Channel').."\n" 
+.."Your insta∶"..(redis:get(hash8)  or 'NO insta').."\n" 
+.."Your Site∶"..(redis:get(hash10)  or 'NO Site').."\n\n" 
+.."CHANNEL @Androidxt".."\n" 
 
 end 
 if matches[1]:lower()== 'delinfo' then 
@@ -155,14 +143,3 @@ return {
     pre_process = pre_process 
 } 
 end 
-
---[[#Open_plugin_ASL 
-پلاگین اصل 
-💾ذخیره اطلاعات شما از قبیل⁉️ 
-
-📋اسم•سن•ادرس•سایت•کانال•اینساگرام•جنسیت•تحصیلات•شماره 
-▂▂▂▂▂▂▂▂▂▂▂▂ 
-#by: VAHID 
-Channel∶ @ATTOM_CH 
-Channel: @SUDO_TM 
-]] 
