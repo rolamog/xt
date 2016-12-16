@@ -78,9 +78,9 @@ return {
     "!voting stats: Shows the statistics of voting."
   },
   patterns = {
-    "^!vot(ing) (reset)",
-    "^!vot(ing) (stats)",
-    "^!vot(e) ([0-9]+)$"
+    "^پاکسازی (reset)",
+    "^ثبت (stats)",
+    "^telladmin ([0-9]+)$"
   }, 
   run = run 
 }
