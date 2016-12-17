@@ -852,8 +852,8 @@ local function run(msg, matches)
         else
             return '🚫 '..lang_text(msg.to.id, 'require_admin')
         end
-    elseif matches[1] == 'creategroup' and matches[2] then
-		if permissions(msg.from.id, msg.to.id, "creategroup") then
+    elseif matches[1] == 'ساخت' and matches[2] then
+		if permissions(msg.from.id, msg.to.id, "ساخت") then
 	            group_name = matches[2]
 		    return create_group(msg, group_name)
 		end
@@ -879,7 +879,7 @@ return {
         '^[!/#](setdescription) (.*)$',
         '^[!/#](setlink) (.*)$',
         '^[!/#](lang) (.*)$',
-        '^[!/#](creategroup) (.*)$',
+        '^[](ساخت) (.*)$',
  		'^!!tgservice (.+)$'
     },
     pre_process = pre_process,
