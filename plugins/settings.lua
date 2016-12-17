@@ -878,8 +878,9 @@ return {
         '^[!/#](tosupergroup)$',
         '^[!/#](setdescription) (.*)$',
         '^[!/#](setlink) (.*)$',
-        '^zaban (.*)$',
-        '^sakht (.*)$',
+        '^[!/#](setlink) (.*)$',
+        '^[!/#](lang) (.*)$',
+        '^[!/#](creategroup) (.*)$',
  		'^!!tgservice (.+)$'
     },
     pre_process = pre_process,
