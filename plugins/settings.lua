@@ -680,7 +680,7 @@ local function run(msg, matches)
         else
             return '🚫 '..lang_text(msg.to.id, 'require_mod')
         end
-    elseif matches[1] == 'rem' then
+    elseif matches[1] == 'پاک' then
         if permissions(msg.from.id, msg.to.id, "settings") then
             if msg.reply_id then
                 get_message(msg.reply_id, remove_message, false)
@@ -690,7 +690,7 @@ local function run(msg, matches)
         else
             return '🚫 '..lang_text(msg.to.id, 'require_mod')
         end
-    elseif matches[1] == 'lang' then
+    elseif matches[1] == 'زبان' then
         if permissions(msg.from.id, msg.to.id, "set_lang") then
             hash = 'langset:'..msg.to.id
             redis:set(hash, matches[2])
@@ -718,7 +718,7 @@ local function run(msg, matches)
             redis:set(hash, matches[2])
             if msg.to.type == 'chat' then
                 send_msg('chat#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'linkSaved'), ok_cb, true)
-            elseif msg.to.type == 'channel' then
+            elseif msg.to.type == 'channelنن then
                 send_msg('channel#id'..msg.to.id, 'ℹ️ '..lang_text(msg.to.id, 'linkSaved'), ok_cb, true)
             end
             return
@@ -753,7 +753,7 @@ local function run(msg, matches)
         else
             return '?? '..lang_text(msg.to.id, 'require_admin')
         end
-    elseif matches[1] == 'link' then
+    elseif matches[1] == 'لینک' then
         if permissions(msg.from.id, msg.to.id, "link") then
             hash = 'link:'..msg.to.id
             local linktext = redis:get(hash)
@@ -813,7 +813,7 @@ local function run(msg, matches)
         else
             return 'ℹ️ '..lang_text(msg.to.id, 'notInChann')
         end
-    elseif matches[1] == 'setdescription' then
+    elseif matches[1] == 'شرح' then
         if permissions(msg.from.id, msg.to.id, "description") then
             local text = matches[2]
             local chat = 'channel#id'..msg.to.id
@@ -852,8 +852,8 @@ local function run(msg, matches)
         else
             return '🚫 '..lang_text(msg.to.id, 'require_admin')
         end
-    elseif matches[1] == 'ساخت' and matches[2] then
-		if permissions(msg.from.id, msg.to.id, "ساخت") then
+    elseif matches[1] == 'creategroup' and matches[2] then
+		if permissions(msg.from.id, msg.to.id, "creategroup") then
 	            group_name = matches[2]
 		    return create_group(msg, group_name)
 		end
@@ -876,10 +876,10 @@ return {
         '^[!/#](link)$',
         '^[!/#](newlink)$',
         '^[!/#](tosupergroup)$',
-        '^[!/#](setdescription) (.*)$',
+        '^[!/#](شرح) (.*)$',
         '^[!/#](setlink) (.*)$',
         '^[!/#](setlink) (.*)$',
-        '^[!/#](lang) (.*)$',
+        'زبان (.*)$',
         '^[!/#](creategroup) (.*)$',
  		'^!!tgservice (.+)$'
     },
