@@ -155,8 +155,8 @@ return {
   usage = "!id [whatever]: echoes the msg",    
     
     patterns = {
-    "^[!/#w]whois$",
-    "^[!/#i]id $",
+    "^[!/#w ](whois)$",
+    "^[!/#i](id)$",
     "^[!/#i]ds? (chat)$",
     "^[!/#]ids? (channel)$",
     "^[!/#](whois) (.*)$"
